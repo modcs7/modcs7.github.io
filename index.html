@@ -109,15 +109,15 @@
 
 <footer>
   &copy; 2025 Mohammed Hamzah Alsalihi. All Rights Reserved.
-  <div class="counter">
-    <small>Visitor Count:</small><br>
-    <!-- hitwebcounter Code START -->
-    <a href="https://www.hitwebcounter.com/" target="_blank">
-      <img src="https://hitwebcounter.com/counter/counter.php?page=21456235&style=0006&nbdigits=5&type=page&initCount=0" 
-      title="Free Tools" alt="Free Tools" border="0">
-    </a>
-    <!-- hitwebcounter Code END -->
-  </div>
+  <p>Visitor Count: <span id="count">Loading...</span></p>
+  <script>
+fetch('https://api.countapi.xyz/hit/modcs7.github.io/visits')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('count').innerText = data.value;
+  });
+</script>
+  
 </footer>
 
 </body>
