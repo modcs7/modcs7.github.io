@@ -1,1 +1,72 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Mohammed Hamzah Alsalihi</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-card { max-width: 900px; margin: 0 auto; }
+    .contact-card h2 { margin-top: 0; }
+    .label { font-weight: bold; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+    .list { margin: 0; padding-left: 18px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Contact</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="supervision.html">Supervision</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <div class="contact-card">
+    <h2>Alsalihi Mohammed</h2>
+
+    <p>
+      <span class="label">Office location</span><br>
+      Budapest University of Technology and Economics (BME)<br>
+      Building I, Room IB157
+    </p>
+
+    <p class="label">Email</p>
+    <ul class="list mono">
+      <li><span class="obf" data-e="m.abed@edu.bme.hu">m(dot)abed(at)edu(dot)bme(dot)hu</span></li>
+      <li><span class="obf" data-e="mabed@tmit.bme.hu">mabed(at)tmit(dot)bme(dot)hu</span></li>
+      <li><span class="obf" data-e="mohammed.abed@qu.edu.iq">mohammed(dot)abed(at)qu(dot)edu(dot)iq</span></li>
+    </ul>
+
+    <p>
+      <span class="label">Fax</span><br>
+      (+36 1) 463 3107
+    </p>
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 Mohammed Hamzah AlSalihi.
+</footer>
+
+<script>
+  // Make obfuscated emails clickable while keeping the displayed text
+  document.querySelectorAll('.obf').forEach(function(el){
+    var email = el.getAttribute('data-e');
+    if (!email) return;
+    var a = document.createElement('a');
+    a.href = 'mailto:' + email;
+    a.textContent = el.textContent;
+    el.replaceWith(a);
+  });
+</script>
+
+</body>
+</html>
