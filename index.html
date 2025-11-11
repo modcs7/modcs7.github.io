@@ -3,18 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohammed Hamzah Alsalihi</title>
+  <title>Mohammed Hamzah Alsalihi - Home</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    main { max-width: 900px; margin: 0 auto; }
+    .profile-photo { width: 180px; border-radius: 50%; display: block; margin: 20px auto; }
+    .social-links { text-align: center; margin-top: 10px; }
+    .social-links a img { width: 32px; height: 32px; margin: 0 8px; vertical-align: middle; }
+    .section { margin-bottom: 40px; }
+    .news-item { margin-bottom: 15px; background: #fff; padding: 15px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-left: 5px solid #00509e; }
+    .news-item strong { color: #00509e; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    footer { text-align: center; padding: 20px; background-color: #003366; color: white; margin-top: 40px; }
+    .counter { margin-top: 10px; }
+  </style>
 </head>
 <body>
 
 <header>
   <h1>Mohammed Hamzah AlSalihi</h1>
-  <p>Assistant Professor of Computer Science, AlQadisiyah University</p>
-  <p>Visiting Fellow of Computer Science, Bournemouth University </p>
-  <p>PhD candidate in the Speech Acoustics Laboratory,<br>
-  Department of Telecommunications and Artificial Intelligence,<br>
-  Budapest University of Technology and Economics, Budapest, Hungary</p>
+  <p>Assistant Professor of Computer Science, University of AlQadisiyah</p>
+  <p>Visiting Fellow, Bournemouth University</p>
 </header>
 
 <nav>
@@ -26,12 +35,80 @@
 </nav>
 
 <main>
-  <h2>Welcome</h2>
-  <p>Welcome to my academic website. I specialize in artificial intelligence, machine learning, and speech technology.</p>
+
+  <img src="profile-photo.jpg" alt="Mohammed Hamzah AlSalihi" class="profile-photo">
+
+  <div class="section">
+    <p>I am an Assistant Professor at the University of AlQadisiyah and a Visiting Fellow at Bournemouth University. 
+    My research focuses on artificial intelligence, speech technology, and forensic voice comparison. 
+    I work on projects that integrate machine learning, deep learning, and signal processing for real-world forensic and communication systems.</p>
+  </div>
+
+  <div class="section">
+    <h2>Recent News</h2>
+
+    <div class="news-item">
+      <strong>November 2025:</strong> New paper accepted in Q1 journal <em>IEEE Access</em> in collaboration with several doctors and professors from Hungary and Iraq.  
+      <br><strong>Title:</strong> Retraining-Free Pruning Text-to-Speech Synthesis Model for Speaker Cloning.
+    </div>
+
+    <div class="news-item">
+      <strong>October 2025:</strong> Presented a conference paper at <em>Specom 2025</em> in Szeged, titled 
+      “Effect of Spoof Speech on Forensic Voice Comparison Using Deep Speaker Embeddings,” published by Springer Nature Switzerland.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Quick Profile Highlights</h2>
+    <ul>
+      <li><strong>Current positions:</strong> Assistant Professor, University of AlQadisiyah; Visiting Fellow, Bournemouth University</li>
+      <li><strong>Research areas:</strong> AI, Deep Learning, Speech Technology, Forensic Voice Comparison</li>
+      <li><strong>Education:</strong> PhD Candidate, Speech Acoustics Laboratory, BME, Budapest</li>
+      <li><strong>Collaborations:</strong> UK, Hungary, USA, Australia</li>
+      <li><strong>Scholarship:</strong> PhD Stipendium Hungaricum, July 2022</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Key Achievements</h2>
+
+    <div class="news-item">
+      <strong>Investigation into the Use of Federated Learning to Diagnose Brain Tumor</strong><br>
+      <strong>Duration:</strong> January 2024 – July 2024<br>
+      <strong>Funding Agency:</strong> Research England, Through Buckinghamshire New University<br>
+      <strong>Grant Reference:</strong> REX100-18<br>
+      <strong>Research Institution:</strong> Buckinghamshire New University
+    </div>
+  </div>
+
+  <div class="section social-links">
+    <a href="https://scholar.google.co.il/citations?user=0vQK73wAAAAJ" target="_blank">
+      <img src="icons/google-scholar.png" alt="Google Scholar">
+    </a>
+    <a href="https://www.researchgate.net/" target="_blank">
+      <img src="icons/researchgate.png" alt="ResearchGate">
+    </a>
+    <a href="https://www.linkedin.com/" target="_blank">
+      <img src="icons/linkedin.png" alt="LinkedIn">
+    </a>
+    <a href="https://modcs7.github.io" target="_blank">
+      <img src="icons/website.png" alt="Personal Website">
+    </a>
+  </div>
+
 </main>
 
 <footer>
-  &copy; 2025 Mohammed Hamzah AlSalihi. All Rights Reserved.
+  &copy; 2025 Mohammed Hamzah Alsalihi. All Rights Reserved.
+  <div class="counter">
+    <small>Visitor Count:</small><br>
+    <!-- hitwebcounter Code START -->
+    <a href="https://www.hitwebcounter.com/" target="_blank">
+      <img src="https://hitwebcounter.com/counter/counter.php?page=21456235&style=0006&nbdigits=5&type=page&initCount=0" 
+      title="Free Tools" alt="Free Tools" border="0">
+    </a>
+    <!-- hitwebcounter Code END -->
+  </div>
 </footer>
 
 </body>
