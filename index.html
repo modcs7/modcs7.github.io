@@ -112,16 +112,18 @@
   <p>Visitor Count: <span id="count">Loading...</span></p>
 
   <script>
-    fetch('https://api.countapi.dev/hit/modcs7.github.io/visits')
+    fetch('https://countapi.jacob.workers.dev/hit/modcs7.github.io/visits')
       .then(response => response.json())
       .then(data => {
         document.getElementById('count').textContent = data.value;
       })
-      .catch(() => {
+      .catch(error => {
+        console.error('Count API error:', error);
         document.getElementById('count').textContent = 'Unavailable';
       });
   </script>
 </footer>
+
 
 
 </body>
