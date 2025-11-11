@@ -110,15 +110,19 @@
 <footer>
   &copy; 2025 Mohammed Hamzah Alsalihi. All Rights Reserved.
   <p>Visitor Count: <span id="count">Loading...</span></p>
+
   <script>
-fetch('https://api.countapi.xyz/hit/modcs7.github.io/visits')
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById('count').innerText = data.value;
-  });
-</script>
-  
+    fetch('https://api.countapi.dev/hit/modcs7.github.io/visits')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('count').textContent = data.value;
+      })
+      .catch(() => {
+        document.getElementById('count').textContent = 'Unavailable';
+      });
+  </script>
 </footer>
+
 
 </body>
 </html>
