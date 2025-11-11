@@ -112,17 +112,20 @@
   <p>Visitor Count: <span id="count">Loading...</span></p>
 
   <script>
-    fetch('https://countapi.jacob.workers.dev/hit/modcs7.github.io/visits')
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById('count').textContent = data.value;
-      })
-      .catch(error => {
-        console.error('Count API error:', error);
-        document.getElementById('count').textContent = 'Unavailable';
-      });
+    // Get the current count from localStorage
+    let visits = localStorage.getItem('visits');
+
+    // Convert to number or start at 0
+    visits = visits ? parseInt(visits) + 1 : 1;
+
+    // Save the updated count
+    localStorage.setItem('visits', visits);
+
+    // Show it
+    document.getElementById('count').textContent = visits;
   </script>
 </footer>
+
 
 
 
