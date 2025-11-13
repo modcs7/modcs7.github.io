@@ -107,24 +107,16 @@
 
 </main>
 
-<footer>
-  &copy; 2025 Mohammed Hamzah Alsalihi. All Rights Reserved.
-  <p>Visitor Count: <span id="count">Loading...</span></p>
 
-  <script>
-    // Get the current count from localStorage
-    let visits = localStorage.getItem('visits');
+<script>
+fetch('https://api.countapi.xyz/hit/yourdomain.com/visits')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('visitor-count').textContent = data.value;
+  });
+</script>
 
-    // Convert to number or start at 0
-    visits = visits ? parseInt(visits) + 1 : 1;
-
-    // Save the updated count
-    localStorage.setItem('visits', visits);
-
-    // Show it
-    document.getElementById('count').textContent = visits;
-  </script>
-</footer>
+<div>Visits: <span id="visitor-count"></span></div>
 
 
 
