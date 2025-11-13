@@ -45,4 +45,8 @@ footer {
   color: white;
   margin-top: 40px;
 }
+.counter-box img {
+  display: block;
+  margin: 0 auto;
+}
 
