@@ -13,27 +13,50 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
-    name: 'Core AI & ML',
+    name: 'Research Areas',
     icon: Brain,
-    skills: ['PyTorch', 'TensorFlow', 'scikit-learn', 'Transformers', 'NLP', 'LangChain', 'LangGraph', 'AgenticRAG', 'VectorDB', 'Predictive Analytics', 'LLMOps'],
+    skills: [
+      'Forensic voice comparison',
+      'Speaker verification',
+      'Speech deepfake detection',
+      'Speech and signal processing',
+      'Medical image processing',
+      'Artificial intelligence',
+    ],
     color: 'from-primary to-blue-400',
   },
   {
-    name: 'Data Engineering',
+    name: 'Methods & Models',
     icon: Database,
-    skills: ['Docker', 'FastAPI', 'GitHub Actions', 'CI/CD', 'FAISS', 'Chroma', 'REST APIs', 'Linux', 'HPC', 'AWS', 'Azure', 'ETL'],
+    skills: [
+      'Deep speaker embeddings',
+      'x-vector',
+      'ECAPA-TDNN',
+      'WavLM',
+      'Machine learning',
+      'Deep learning',
+      'Signal processing',
+      'Federated learning',
+    ],
     color: 'from-accent to-indigo-400',
   },
   {
-    name: 'Programming',
+    name: 'Applications',
     icon: Code2,
-    skills: ['Python', 'Java', 'JavaScript', 'SQL', 'C#'],
+    skills: [
+      'Forensic voice comparison',
+      'Healthcare AI',
+      'Security and biometrics',
+      'Communication systems',
+      'Medical imaging',
+      'Speech analytics',
+    ],
     color: 'from-purple-500 to-purple-400',
   },
   {
-    name: 'Visualization',
+    name: 'Collaboration',
     icon: BarChart3,
-    skills: ['Matplotlib', 'Seaborn', 'Streamlit'],
+    skills: ['United Kingdom', 'Hungary', 'United States', 'Australia'],
     color: 'from-pink-500 to-pink-400',
   },
 ];
@@ -81,10 +104,10 @@ const Skills = () => {
           }}
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-gradient">Technical Skills</span>
+            <span className="text-gradient">Research Focus</span>
           </h2>
           <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
-            Technologies and tools I work with
+            Areas and methods that shape my research
           </p>
           <div className="w-20 h-1 bg-gradient-to-r from-primary via-accent to-accent-purple mx-auto rounded-full mt-4 animate-gradient-shift"
             style={{ backgroundSize: '200% 200%' }}
@@ -192,10 +215,10 @@ const Skills = () => {
           }}
         >
           {[
-            { icon: Server, label: 'MLOps', desc: 'Docker, CI/CD' },
-            { icon: Cloud, label: 'Cloud', desc: 'AWS, Azure' },
-            { icon: GitBranch, label: 'Version Control', desc: 'Git, GitHub' },
-            { icon: Terminal, label: 'Systems', desc: 'Linux, HPC' },
+            { icon: Server, label: 'Collaborations', desc: 'UK, Hungary' },
+            { icon: Cloud, label: 'Global Reach', desc: 'USA, Australia' },
+            { icon: GitBranch, label: 'Scholarship', desc: 'Stipendium Hungaricum' },
+            { icon: Terminal, label: 'Institutional', desc: 'BME, AlQadisiyah' },
           ].map((item) => (
             <div
               key={item.label}

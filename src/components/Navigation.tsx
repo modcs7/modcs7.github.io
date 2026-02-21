@@ -6,8 +6,9 @@ const navItems = [
   { label: 'About', href: '#about' },
   { label: 'Experience', href: '#experience' },
   { label: 'Skills', href: '#skills' },
-  { label: 'Projects', href: '#projects' },
+  { label: 'News', href: '#projects' },
   { label: 'Publications', href: '#publications' },
+  { label: 'Supervision', href: '#supervision' },
   { label: 'Education', href: '#education' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -65,7 +66,7 @@ const Navigation = () => {
               onClick={(e) => handleNavClick(e, '#hero')}
               className="relative group font-bold text-lg transition-all duration-300"
             >
-              <span className="text-gradient">DA</span>
+              <span className="text-gradient">MA</span>
               <div className="absolute inset-0 bg-primary/20 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-full" />
             </a>
             

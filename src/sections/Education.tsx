@@ -11,44 +11,38 @@ interface EducationItem {
 
 const education: EducationItem[] = [
   {
-    degree: 'Ph.D. in Computer Engineering',
+    degree: 'PhD in Computer Science',
     institution: 'Budapest University of Technology and Economics',
     location: 'Budapest, Hungary',
-    period: '2022 – Ongoing',
+    period: '2022 – Present',
     details: [
-      'Research Focus: Speech-signal processing and deep learning algorithms for disease detection.',
-      'Relevant Coursework: Intelligent data analysis, Software verification and validation, Statistical Modelling.',
+      'Specialisation: Speech Technology and Forensic Voice Comparison.',
+      'PhD Candidate at the Speech Acoustics Laboratory.',
     ],
   },
   {
-    degree: 'MSc in Advanced Computer Science',
-    institution: 'University of Leicester',
-    location: 'Leicester, United Kingdom',
-    period: '2013 – 2015',
+    degree: 'M.Sc. in Computer Science',
+    institution: 'Dr. B.A.M. University',
+    location: 'India',
+    period: '2011',
     details: [
-      'Dissertation: Designed and implemented a web-based ontology editing and development platform using Java and jQuery Mobile.',
-      'Key Modules: Cloud Computing, Semantic Web, Knowledge Engineering, Advanced Web Technologies, Financial Information Systems, Advanced Programming.',
+      'Thesis Focus: SAR Image Compression using SPIHT.',
     ],
   },
   {
-    degree: 'BSc in Mathematics and Computer Science',
-    institution: 'University of Sulaimani',
-    location: 'Kurdistan, Iraq',
-    period: '2007 – 2011',
+    degree: 'B.Sc. in Computer Science',
+    institution: 'University of AlQadisiyah',
+    location: 'Iraq',
+    period: '2008',
     details: [
-      'Emphasized strong foundational coursework in mathematics, algorithms, and programming concepts.',
-      'Notable Modules: Advanced Calculus, Data Structures, Object-Oriented Programming, Database Fundamentals.',
+      'Completed foundational coursework in computer science and programming.',
     ],
   },
 ];
 
 const certificates = [
-  { name: 'Large Language Model Operations (LLMOps)', provider: <a href='https://coursera.org/share/2acd208a6a4f51cbe75018eb8853f787'> Coursera </a> },
-  { name: 'AI and Machine Learning in Healthcare', provider: 'Cambridge Centre for AI in Medicine' },
-  { name: 'Generative Adversarial Networks (GANs) Specialization', provider: <a href='https://coursera.org/share/a35f812b4ed09bce78ce925e06729e76'> Coursera </a> },
-  { name: 'Mathematics for Machine Learning and Data Science', provider: <a href='https://coursera.org/share/39b2bebf70e3fa38a6191eedb60cc157'> Coursera </a> },
-  { name: 'Deep Learning Specialization', provider: <a href='https://coursera.org/share/02d72350521129bbfe8259a423cc7cc3'> Coursera </a> },
-  { name: 'Machine Learning Specialization', provider: <a href='https://coursera.org/share/331c8c18ed137b614104550cabcfa711'> Coursera </a> },
+  { name: 'PhD Stipendium Hungaricum Scholarship', provider: 'July 2022' },
+  { name: 'Research England Project Grant', provider: 'REX100-18' },
 ];
 
 const Education = () => {
@@ -95,7 +89,7 @@ const Education = () => {
             <span className="text-gradient">Education</span>
           </h2>
           <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
-            Academic foundation in computer science and AI
+            Academic background in computer science and AI
           </p>
           <div className="w-20 h-1 bg-gradient-to-r from-primary via-accent to-accent-purple mx-auto rounded-full mt-4 animate-gradient-shift"
             style={{ backgroundSize: '200% 200%' }}
@@ -195,7 +189,7 @@ const Education = () => {
           >
             <div className="flex items-center gap-3">
               <Award className="w-6 h-6 text-primary" />
-              <span className="font-semibold text-foreground">Professional Certificates</span>
+              <span className="font-semibold text-foreground">Scholarships & Awards</span>
               <span className="px-2 py-0.5 bg-primary/10 rounded-full text-xs font-medium text-primary">
                 {certificates.length}
               </span>

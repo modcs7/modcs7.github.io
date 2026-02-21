@@ -1,13 +1,13 @@
 {
-  "name": "Dosti Aziz - ML/AI Engineer Portfolio",
-  "short_name": "Dosti Aziz",
-  "start_url": "/dostiaziz/",
+  "name": "Mohammed Hamzah AlSalihi - Academic Portfolio",
+  "short_name": "Mohammed AlSalihi",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#3898ec",
   "icons": [
     {
-      "src": "/dostiaziz/profile.jpg",
+      "src": "/profile.jpg",
       "sizes": "512x512",
       "type": "image/jpeg"
     }

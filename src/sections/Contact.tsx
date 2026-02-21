@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Mail, MapPin, Phone, Github, Linkedin, Send, CheckCircle } from 'lucide-react';
+import { Mail, MapPin, Phone, Linkedin, Send, CheckCircle, ExternalLink, Globe, Link } from 'lucide-react';
 import GoogleScholarIcon from '../icons/GoogleScholar';
 
 const Contact = () => {
@@ -44,16 +44,27 @@ const Contact = () => {
   };
   
   const contactInfo = [
-    { icon: Mail, label: 'Email', value: 'dosti.hamasalih@gmail.com', href: 'mailto:dosti.hamasalih@gmail.com' },
-    { icon: MapPin, label: 'Location', value: 'Budapest, Hungary', href: null },
-    { icon: Phone, label: 'Phone', value: '+36 707925300', href: 'tel:+36707925300' },
+    { icon: Mail, label: 'Email', value: 'm.abed@edu.bme.hu', href: 'mailto:m.abed@edu.bme.hu' },
+    { icon: MapPin, label: 'Office', value: 'BME, Building I, Room IB157', href: null },
+    { icon: Phone, label: 'Fax', value: '(+36 1) 463 3107', href: null },
+  ];
+
+  const additionalEmails = [
+    'mabed@tmit.bme.hu',
+    'mohammed.abed@qu.edu.iq',
+    'malsalihi@qu.edu.iq',
+    'malsalihi@bournemouth.ac.uk',
   ];
   
   const socialLinks = [
-  { icon: Github, label: 'GitHub', href: 'https://github.com/DostiAziz' },
-  { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com/in/DostiAziz' },
-  { icon: GoogleScholarIcon, label: 'Google Scholar', href: 'https://scholar.google.com/citations?user=kJwocnMAAAAJ&hl=en' },
-];
+    { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/mohammed-hamzah-alsalihi-35617154/' },
+    { icon: GoogleScholarIcon, label: 'Google Scholar', href: 'https://scholar.google.co.il/citations?user=0vQK73wAAAAJ' },
+    { icon: ExternalLink, label: 'ResearchGate', href: 'https://www.researchgate.net/profile/Mohammed-Alsalihi-2' },
+    { icon: Globe, label: 'Personal Site', href: 'https://sites.google.com/qu.edu.iq/mohammed-abed/home-page?authuser=0' },
+    { icon: Link, label: 'ORCID', href: 'https://orcid.org/my-orcid?orcid=0000-0003-4780-4252' },
+    { icon: ExternalLink, label: 'TMiT', href: 'https://www.tmit.bme.hu/node/3904' },
+    { icon: ExternalLink, label: 'University of AlQadisiyah', href: 'https://staff.qu.edu.iq/en/@/mohammed.abed' },
+  ];
 
 
   return (
@@ -235,6 +246,26 @@ const Contact = () => {
                   )}
                 </div>
               ))}
+            </div>
+
+            <div
+              className="rounded-xl bg-card p-4 shadow-soft border border-border"
+              style={{
+                opacity: isVisible ? 1 : 0,
+                transform: isVisible ? 'translateX(0)' : 'translateX(20px)',
+                transition: 'all 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.65s',
+              }}
+            >
+              <p className="text-xs text-foreground/50 mb-2">Additional emails</p>
+              <ul className="space-y-1 text-sm text-foreground/70">
+                {additionalEmails.map((email) => (
+                  <li key={email}>
+                    <a className="hover:text-primary" href={`mailto:${email}`}>
+                      {email}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
             
             {/* Social Links */}

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { Github, Linkedin, Mail, Heart, ArrowUp } from 'lucide-react';
+import { Linkedin, Mail, Heart, ArrowUp } from 'lucide-react';
+import GoogleScholarIcon from '../icons/GoogleScholar';
 
 const Footer = () => {
   const footerRef = useRef<HTMLElement>(null);
@@ -55,10 +56,10 @@ const Footer = () => {
             }}
           >
             <h3 className="text-3xl sm:text-4xl font-bold text-white mb-2">
-              Dosti Aziz
+              Mohammed Hamzah AlSalihi
             </h3>
             <p className="text-white/60 text-sm sm:text-base">
-              Building intelligent systems for tomorrow
+              Advancing speech technology and AI research
             </p>
           </div>
           
@@ -70,7 +71,7 @@ const Footer = () => {
               transition: 'opacity 0.4s ease 0.8s',
             }}
           >
-            Machine Learning Developer • PhD Candidate • AI Researcher
+            Assistant Professor • PhD Researcher • Visiting Fellow
           </p>
           
           {/* Social Links */}
@@ -82,9 +83,9 @@ const Footer = () => {
             }}
           >
             {[
-              { icon: Github, href: 'https://github.com/DostiAziz', label: 'GitHub' },
-              { icon: Linkedin, href: 'https://linkedin.com/in/DostiAziz', label: 'LinkedIn' },
-              { icon: Mail, href: 'mailto:dosti.hamasalih@gmail.com', label: 'Email' },
+              { icon: Linkedin, href: 'https://www.linkedin.com/in/mohammed-hamzah-alsalihi-35617154/', label: 'LinkedIn' },
+              { icon: GoogleScholarIcon, href: 'https://scholar.google.co.il/citations?user=0vQK73wAAAAJ', label: 'Google Scholar' },
+              { icon: Mail, href: 'mailto:m.abed@edu.bme.hu', label: 'Email' },
             ].map((social, index) => (
               <a
                 key={social.label}
@@ -121,7 +122,7 @@ const Footer = () => {
             }}
           >
             <p className="text-white/40 text-sm">
-              © {currentYear} Dosti Aziz. All rights reserved.
+              © {currentYear} Mohammed Hamzah AlSalihi. All rights reserved.
             </p>
             <p className="text-white/40 text-sm flex items-center gap-1">
               Made with <Heart className="w-3.5 h-3.5 text-error fill-error" /> using React & Tailwind

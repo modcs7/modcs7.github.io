@@ -1,8 +1,8 @@
-# DostiAziz — Personal Portfolio
+# Mohammed Hamzah AlSalihi — Academic Portfolio
 
 Personal portfolio website built with Vite, React 19, TypeScript, and Tailwind CSS. Deployed to GitHub Pages via GitHub Actions.
 
-Live site: https://dostiaziz.github.io
+Live site: https://modcs7.github.io
 
 ## Tech stack
 

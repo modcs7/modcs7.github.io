@@ -12,58 +12,36 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    company: 'Nokia',
-    role: 'Machine Learning Developer Intern',
-    period: 'Aug 2025 – Present',
-    location: 'Budapest, Hungary',
+    company: 'University of AlQadisiyah',
+    role: 'Assistant Professor of Computer Science',
+    period: 'Current',
+    location: 'AlQadisiyah, Iraq',
     description: [
-      'Develop Generative AI and LLM-based automation systems integrating LangChain, LangGraph, and vector stores for enterprise-scale intelligent agents.',
-      'Design agentic RAG architectures enabling contextual reasoning, dynamic tool orchestration, and insight generation from structured and unstructured data.',
-      'Build modular GenAI pipelines with API interfaces and tool-calling frameworks, improving workflow automation and analysis accuracy.',
+      'Teach and supervise undergraduate and postgraduate students in computer science.',
+      'Lead research in artificial intelligence, speech technology, and forensic voice comparison.',
+      'Contribute to departmental initiatives and collaborative research projects.',
     ],
-    highlight: 'Outstanding GoBeyond AI Solution Developer Award',
   },
   {
     company: 'Budapest University of Technology and Economics',
-    role: 'PhD Candidate',
-    period: 'Sep 2022 – Present',
+    role: 'PhD Researcher',
+    period: '2022 – Present',
     location: 'Budapest, Hungary',
     description: [
-      'Develop deep learning architectures (CNNs, RNNs, Transformers) for speech-signal analysis in multilingual and clinical contexts.',
-      'Implement distributed training pipelines (PyTorch DDP, Docker, HPC), cutting model training time by 60% while maintaining accuracy.',
-      'Research focuses on cross-lingual speech pathology detection, contributing to robust AI models for healthcare and assistive technology.',
-      'Mentor MSc students on applied machine learning and AI system deployment best practices.',
+      'Research speech technology with a focus on forensic voice comparison and deep speaker embeddings.',
+      'Develop methods for robust speaker verification under challenging conditions.',
+      'Collaborate with the Speech Acoustics Laboratory on AI-driven speech analysis projects.',
     ],
+    highlight: 'PhD Stipendium Hungaricum Scholarship (July 2022)',
   },
   {
-    company: 'ScaleAI',
-    role: 'AI Trainer (LLM Evaluation & Optimization)',
-    period: 'Oct 2024 – June 2025',
-    location: 'Budapest, Hungary',
+    company: 'Bournemouth University',
+    role: 'Visiting Fellow',
+    period: 'Current',
+    location: 'Bournemouth, United Kingdom',
     description: [
-      'Improved LLM reliability and accuracy by identifying model failure modes through adversarial prompting and systematic testing.',
-      'Applied advanced prompting techniques (Chain-of-Thought, ReAct, few-shot learning) to guide model outputs toward more reliable responses.',
-      'Evaluated and corrected AI-generated code for correctness, performance, security vulnerabilities, and adherence to best practices.',
-    ],
-  },
-  {
-    company: 'Eötvös Loránd University',
-    role: 'Assistant Researcher',
-    period: 'Sep 2021 – Sep 2022',
-    location: 'Budapest, Hungary',
-    description: [
-      'Investigated advanced ML and DL algorithms for knowledge graph and ontology processing.',
-      'Supervised and mentored MSc students in Data Science project labs, guiding them through data ingestion, ETL processes, model building, and best practices for results reporting.',
-    ],
-  },
-  {
-    company: 'Freelance',
-    role: 'Software Developer',
-    period: 'Jan 2015 – Present',
-    location: 'Remote',
-    description: [
-      'Develop custom web and desktop solutions (PHP, C#, SQL) for diverse clients, delivering on time and under budget.',
-      'Collaborate with stakeholders to gather requirements, design architectures, and create testable, maintainable products across multiple industries.',
+      'Contribute to collaborative research in AI and speech technology.',
+      'Engage in cross-institutional projects and academic partnerships.',
     ],
   },
 ];
@@ -111,7 +89,7 @@ const Experience = () => {
             <span className="text-gradient">Professional Experience</span>
           </h2>
           <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
-            My journey through AI research and industry
+            Academic and research appointments across AI and speech technology
           </p>
           <div className="w-20 h-1 bg-gradient-to-r from-primary via-accent to-accent-purple mx-auto rounded-full mt-4 animate-gradient-shift"
             style={{ backgroundSize: '200% 200%' }}

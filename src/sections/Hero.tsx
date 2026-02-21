@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Github, Linkedin, Mail, ChevronDown, MapPin } from 'lucide-react';
+import { Linkedin, Mail, ChevronDown, MapPin, ExternalLink } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import GoogleScholarIcon from '../icons/GoogleScholar';
 
@@ -7,7 +7,7 @@ const Hero = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [titleText, setTitleText] = useState('');
-  const fullTitle = 'Machine Learning Engineer & Researcher';
+  const fullTitle = 'Assistant Professor of Computer Science';
   const { resolvedTheme } = useTheme();
   
   useEffect(() => {
@@ -147,7 +147,7 @@ const Hero = () => {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
   };
   
-  const nameChars = 'Dosti Aziz'.split('');
+  const nameChars = 'Mohammed Hamzah AlSalihi'.split('');
   
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -212,7 +212,7 @@ const Hero = () => {
             transition: 'all 0.6s cubic-bezier(0.87, 0, 0.13, 1) 2s',
           }}
         >
-          AI/ML Engineer • PhD Researcher (SpeechAI) • Lifelong Learner
+          Assistant Professor • PhD Researcher • Visiting Fellow
         </p>
 
         {/* Location */}
@@ -236,15 +236,15 @@ const Hero = () => {
           }}
         >
           <a
-            href="https://github.com/DostiAziz"
+            href="https://www.researchgate.net/profile/Mohammed-Alsalihi-2"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-card/80 backdrop-blur-sm shadow-soft hover:shadow-medium hover:-translate-y-1 transition-all duration-300 group"
           >
-            <Github className="w-5 h-5 text-foreground group-hover:text-primary transition-colors" />
+            <ExternalLink className="w-5 h-5 text-foreground group-hover:text-primary transition-colors" />
           </a>
           <a
-            href="https://linkedin.com/in/DostiAziz"
+            href="https://www.linkedin.com/in/mohammed-hamzah-alsalihi-35617154/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-card/80 backdrop-blur-sm shadow-soft hover:shadow-medium hover:-translate-y-1 transition-all duration-300 group"
@@ -252,12 +252,12 @@ const Hero = () => {
             <Linkedin className="w-5 h-5 text-foreground group-hover:text-primary transition-colors" />
           </a>
           <a
-            href="mailto:dosti.hamasalih@gmail.com"
+            href="mailto:m.abed@edu.bme.hu"
             className="p-3 rounded-full bg-card/80 backdrop-blur-sm shadow-soft hover:shadow-medium hover:-translate-y-1 transition-all duration-300 group"
           >
             <Mail className="w-5 h-5 text-foreground group-hover:text-primary transition-colors" />
           </a>
-          <a href='https://scholar.google.com/citations?user=kJwocnMAAAAJ&hl=en'
+          <a href='https://scholar.google.co.il/citations?user=0vQK73wAAAAJ'
              className="p-3 rounded-full bg-card/80 backdrop-blur-sm shadow-soft hover:shadow-medium hover:-translate-y-1 transition-all duration-300 group"
              target="_blank"
              rel="noopener noreferrer"

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ExternalLink, Github, MessageSquare, BookOpen, ShoppingCart, Pill, Network, Fuel } from 'lucide-react';
+import { ExternalLink, Github, BookOpen, FileText, Mic, Shield, Brain } from 'lucide-react';
 import {
   Dialog,
   DialogContent,
@@ -20,46 +20,39 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'Analytics ChatBot',
-    description: 'An intelligent chatbot application that enables users to ask questions and connect with an agent to perform advanced analytics based on their query. Supports local LLMs through HuggingFace.',
-    technologies: ['Python', 'LangChain', 'Agents', 'HuggingFace', 'Chroma DB', 'Streamlit'],
-    icon: MessageSquare,
+    title: 'Face mask Detection from Speech Using Deep Speaker Embeddings',
+    description: 'Accepted at the XXII. Magyar Számítógépes Nyelvészeti Konferencia in Szeged, Hungary (January 2026).',
+    technologies: ['Conference', '2026', 'Szeged'],
+    icon: Mic,
     color: 'from-primary to-blue-500',
   },
   {
-    title: 'arXiv Research Navigator',
-    description: 'A research paper collection and analysis tool that allows users to collect papers and build a vector knowledge base. Supports both local LLMs via HuggingFace and paid LLM APIs.',
-    technologies: ['Python', 'LangChain', 'Chroma DB', 'Streamlit'],
+    title: 'Retraining-Free Pruning Text-to-Speech Synthesis Model for Speaker Cloning',
+    description: 'Accepted in the Q1 journal IEEE Access in collaboration with researchers from Hungary and Iraq (November 2025).',
+    technologies: ['IEEE Access', 'Journal', '2025'],
     icon: BookOpen,
     color: 'from-accent to-indigo-500',
   },
   {
-    title: 'Online Inventory Management',
-    description: 'A comprehensive PHP/MySQL web application supporting both cash and loan transaction modes, designed to improve overall inventory tracking and management efficiency.',
-    technologies: ['PHP', 'MySQL', 'JavaScript', 'HTML/CSS'],
-    icon: ShoppingCart,
+    title: 'Effect of Spoof Speech on Forensic Voice Comparison Using Deep Speaker Embeddings',
+    description: 'Presented at SPECOM 2025 in Szeged and published by Springer Nature Switzerland.',
+    technologies: ['Conference', 'Springer', '2025'],
+    icon: Shield,
     color: 'from-purple-500 to-pink-500',
   },
   {
-    title: 'Pharmacy System',
-    description: 'A robust C# and SQL Server-based desktop solution designed to streamline product ordering and sales in pharmacies, significantly reducing manual workload.',
-    technologies: ['C#', 'SQL Server', '.NET Framework'],
-    icon: Pill,
+    title: 'Spoof Speech Classification Using Deep Speaker Embeddings and Machine Learning Models',
+    description: 'Published in Array (Elsevier) with an emphasis on robust spoof speech detection.',
+    technologies: ['Array', 'Elsevier', '2025'],
+    icon: FileText,
     color: 'from-green-500 to-teal-500',
   },
   {
-    title: 'OntoMobile',
-    description: 'A Java and jQuery Mobile-based application for creating and editing knowledge representation with ontologies, enabling user-friendly ontology management for domain experts.',
-    technologies: ['Java', 'jQuery Mobile', 'OWL', 'RDF'],
-    icon: Network,
+    title: 'Federated Learning to Diagnose Brain Tumor',
+    description: 'Research project funded by Research England through Buckinghamshire New University (REX100-18), Jan–Jul 2024.',
+    technologies: ['Research England', '2024', 'REX100-18'],
+    icon: Brain,
     color: 'from-orange-500 to-red-500',
-  },
-  {
-    title: 'Petrol Station Management',
-    description: 'A PHP/MySQL system for logging sales, purchases, and inventory at petrol stations, enhancing transaction accuracy and record-keeping efficiency.',
-    technologies: ['PHP', 'MySQL', 'JavaScript'],
-    icon: Fuel,
-    color: 'from-yellow-500 to-orange-500',
   },
 ];
 
@@ -104,10 +97,10 @@ const Projects = () => {
           }}
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-gradient">Featured Projects</span>
+            <span className="text-gradient">News & Highlights</span>
           </h2>
           <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
-            AI systems and applications I've built
+            Recent publications, presentations, and funded research
           </p>
           <div className="w-20 h-1 bg-gradient-to-r from-primary via-accent to-accent-purple mx-auto rounded-full mt-4 animate-gradient-shift"
             style={{ backgroundSize: '200% 200%' }}

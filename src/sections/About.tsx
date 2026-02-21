@@ -4,7 +4,7 @@ import { Award, BookOpen, Briefcase } from 'lucide-react';
 const About = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const [isVisible, setIsVisible] = useState(false);
-  const [counters, setCounters] = useState({ years: 0, publications: 0, projects: 0 });
+  const [counters, setCounters] = useState({ positions: 0, areas: 0, publications: 0 });
   
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -32,7 +32,7 @@ const About = () => {
     const steps = 60;
     const interval = duration / steps;
     
-    const targets = { years: 10, publications: 6, projects: 5 };
+    const targets = { positions: 3, areas: 5, publications: 31 };
     let step = 0;
     
     const counterInterval = setInterval(() => {
@@ -41,9 +41,9 @@ const About = () => {
       const easeOut = 1 - Math.pow(1 - progress, 3);
       
       setCounters({
-        years: Math.round(targets.years * easeOut),
+        positions: Math.round(targets.positions * easeOut),
+        areas: Math.round(targets.areas * easeOut),
         publications: Math.round(targets.publications * easeOut),
-        projects: Math.round(targets.projects * easeOut),
       });
       
       if (step >= steps) {
@@ -55,14 +55,14 @@ const About = () => {
   }, [isVisible]);
   
   const stats = [
-    { icon: Briefcase, value: counters.years, suffix: '+', label: 'Years Experience' },
+    { icon: Briefcase, value: counters.positions, suffix: '', label: 'Current Positions' },
     { icon: BookOpen, value: counters.publications, suffix: '+', label: 'Publications' },
-    { icon: Award, value: counters.projects, suffix: '+', label: 'AI Projects' },
+    { icon: Award, value: counters.areas, suffix: '', label: 'Research Areas' },
   ];
   
   const skillTags = [
-    'PyTorch', 'TensorFlow', 'LangChain', 'LangGraph', 
-    'Transformers', 'NLP', 'AgenticRAG', 'VectorDB'
+    'Speech Technology', 'Forensic Voice', 'Deep Learning', 'AI',
+    'Signal Processing', 'Speaker Verification', 'Deepfake Detection', 'Medical Imaging'
   ];
   
   return (
@@ -101,10 +101,10 @@ const About = () => {
                 transition: 'all 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.2s',
               }}
             >
-              Machine Learning/ AI Engineer and PhD Researcher specializing in{' '}
-              <span className="text-gradient">Deep learning</span>,{' '}
-              <span className="text-gradient">Generative AI</span>, and{' '}
-              <span className="text-gradient">Voice Biomarkers</span>.
+              Assistant Professor of Computer Science and PhD Researcher specializing in{' '}
+              <span className="text-gradient">artificial intelligence</span>,{' '}
+              <span className="text-gradient">speech technology</span>, and{' '}
+              <span className="text-gradient">forensic voice comparison</span>.
             </p>
             
             <p 
@@ -115,10 +115,9 @@ const About = () => {
                 transition: 'all 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.4s',
               }}
             >
-              Currently contributing to Nokia's AI initiatives, designing agentic RAG architectures 
-              and autonomous workflows leveraging LangChain, LangGraph, and vector databases. My 
-              research focuses on language dependent/independent speech pathology detection using AI models
-              for healthcare applications.
+              I work on projects that integrate machine learning, deep learning, and signal processing
+              for real-world forensic and communication systems, with a focus on robust speech analytics
+              and speaker verification.
             </p>
             
             <p 
@@ -129,9 +128,8 @@ const About = () => {
                 transition: 'all 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.5s',
               }}
             >
-              Recognized with the <span className="font-semibold text-primary">Outstanding GoBeyond AI Solution Developer</span> award 
-              for delivering a fully functional AI application integrating LangGraph workflows and 
-              large language models for complex supply chain data analysis in a short period of time.
+              I collaborate with research teams across the UK, Hungary, USA, and Australia, and I am
+              a recipient of the <span className="font-semibold text-primary">PhD Stipendium Hungaricum</span> scholarship (July 2022).
             </p>
             
             {/* Stats */}
@@ -179,7 +177,7 @@ const About = () => {
               <div className="absolute inset-4 rounded-full overflow-hidden shadow-large animate-morph">
                 <img
                   src={`${import.meta.env.BASE_URL}profile.jpg`}
-                  alt="Dosti Aziz"
+                  alt="Mohammed Hamzah AlSalihi"
                   className="w-full h-full object-cover"
                 />
               </div>
