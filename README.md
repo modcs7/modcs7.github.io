@@ -1,4 +1,4 @@
-# Mohammed Hamzah AlSalihi — Academic Portfolio
+# Mohammed Hamzah Alsalihi — Academic Portfolio
 
 Personal portfolio website built with Vite, React 19, TypeScript, and Tailwind CSS. Deployed to GitHub Pages via GitHub Actions.
 
