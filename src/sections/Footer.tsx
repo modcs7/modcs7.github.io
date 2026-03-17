@@ -122,7 +122,7 @@ const Footer = () => {
             }}
           >
             <p className="text-white/40 text-sm">
-              © {currentYear} Mohammed Hamzah AlSalihi. All rights reserved.
+              © {currentYear} Mohammed Hamzah Alsalihi. All rights reserved.
             </p>
             <p className="text-white/40 text-sm flex items-center gap-1">
               Made with <Heart className="w-3.5 h-3.5 text-error fill-error" /> using React & Tailwind
