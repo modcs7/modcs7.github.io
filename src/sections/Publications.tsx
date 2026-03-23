@@ -12,7 +12,7 @@ interface Publication {
 const publications: Publication[] = [
   {
     title: 'Sharp Coefficient Estimates for Analytic Functions Subordinate to the Cusp Domain: Theory and Image Processing Applications',
-    authors: 'El-Ityan, M.; Tayyah, A.S.; Alsalihi, M.H.; Frasin, B.A.; Lupaş',
+    authors: 'El-Ityan, M. Tayyah A.S, Alsalihi M.H., Frasin B.A. and Lupaş',
     venue: 'Mathematics',
     year: '2026',
     link: 'https://www.mdpi.com/2227-7390/14/6/1075',
