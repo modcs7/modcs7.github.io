@@ -10,12 +10,13 @@ interface Publication {
 }
 
 const publications: Publication[] = [
+  
   {
-    title: 'Sharp Coefficient Estimates for Analytic Functions Subordinate to the Cusp Domain: Theory and Image Processing Applications',
-    authors: 'El-Ityan, M. Tayyah A.S, Alsalihi M.H., Frasin B.A. and Lupaş',
-    venue: 'Mathematics',
+    title: 'Face mask Detection from Speech Using Deep Speaker Embeddings',
+    authors: 'M. H. Alsalihi and D. Sztahó',
+    venue: 'XXII. Magyar Számítógépes Nyelvészeti Konferencia',
     year: '2026',
-    link: 'https://www.mdpi.com/2227-7390/14/6/1075',
+    link: 'https://www.researchgate.net/profile/Mohammed-Alsalihi-2/publication/400144906_Face_mask_Detection_from_Speech_Using_Deep_Speaker_Embeddings/links/697a470164ca8a3820872da9/Face-mask-Detection-from-Speech-Using-Deep-Speaker-Embeddings.pdf',
   },
   {
     title: 'Face mask Detection from Speech Using Deep Speaker Embeddings',
