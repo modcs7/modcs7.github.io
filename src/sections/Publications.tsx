@@ -11,14 +11,7 @@ interface Publication {
 
 const publications: Publication[] = [
   
-  {
-    title: 'Face mask Detection from Speech Using Deep Speaker Embeddings',
-    authors: 'M. H. Alsalihi and D. Sztahó',
-    venue: 'XXII. Magyar Számítógépes Nyelvészeti Konferencia',
-    year: '2026',
-    link: 'https://www.researchgate.net/profile/Mohammed-Alsalihi-2/publication/400144906_Face_mask_Detection_from_Speech_Using_Deep_Speaker_Embeddings/links/697a470164ca8a3820872da9/Face-mask-Detection-from-Speech-Using-Deep-Speaker-Embeddings.pdf',
-  },
-  {
+ {
     title: 'Face mask Detection from Speech Using Deep Speaker Embeddings',
     authors: 'M. H. Alsalihi and D. Sztahó',
     venue: 'XXII. Magyar Számítógépes Nyelvészeti Konferencia',
