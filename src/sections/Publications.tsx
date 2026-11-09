@@ -9,9 +9,15 @@ interface Publication {
   link?: string;
 }
 
-const publications: Publication[] = [  
-
- {
+const publications: Publication[] = [
+  {
+    title: 'Sharp Coefficient Estimates for Analytic Functions Subordinate to the Cusp Domain: Theory and Image Processing Applications',
+    authors: 'M. El-Ityan, A. S. Tayyah, M. H. Alsalihi, B. A. Frasin and A. A. Lupas',
+    venue: 'Mathematics, vol. 14, no. 6, 1075',
+    year: '2026',
+    link: 'https://www.mdpi.com/2227-7390/14/6/1075',
+  },
+  {
     title: 'Face mask Detection from Speech Using Deep Speaker Embeddings',
     authors: 'M. H. Alsalihi and D. Sztahó',
     venue: 'XXII. Magyar Számítógépes Nyelvészeti Konferencia',
