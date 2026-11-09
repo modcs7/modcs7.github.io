@@ -10,6 +10,15 @@ interface SupervisionItem {
 
 const supervisionItems: SupervisionItem[] = [
   {
+    student: 'Rihani Awn Nashat Majib',
+    year: '2026',
+    title: 'Robustness of Fine-Tuned Speaker Embeddings for Speech Spoof Detection Under Additive Noise and Reverberation',
+    details: [
+      'Course: Project Laboratory 1',
+      'Department: Telecommunications and Artificial Intelligence, Faculty of Electrical Engineering and Informatics, BME',
+    ],
+  },
+  {
     student: 'Selim Ben Haj Braiek',
     year: '2025',
     title: 'Enhancing Spoof Speech Detection with CNN-Based Transfer Learning on Mel Spectrograms',
