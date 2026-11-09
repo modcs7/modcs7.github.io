@@ -11,6 +11,20 @@ interface Publication {
 
 const publications: Publication[] = [
   {
+    title: 'Evaluating Forensic Voice Comparison Under Face Mask Conditions Using Pretrained Speaker Embedding Models',
+    authors: 'M. H. Alsalihi and D. Sztahó',
+    venue: 'Journal of Voice',
+    year: '2026',
+    link: 'https://doi.org/10.1016/j.jvoice.2026.10.016',
+  },
+  {
+    title: 'Effect of Cross-Lingual Fine-Tuning of Embedding Models on Deepfake Classification',
+    authors: 'M. H. Alsalihi and D. Sztahó',
+    venue: 'IberSPEECH 2026, Madrid, Spain',
+    year: '2026',
+    link: 'https://doi.org/10.21437/IberSPEECH.2026-17',
+  },
+  {
     title: 'Sharp Coefficient Estimates for Analytic Functions Subordinate to the Cusp Domain: Theory and Image Processing Applications',
     authors: 'M. El-Ityan, A. S. Tayyah, M. H. Alsalihi, B. A. Frasin and A. A. Lupas',
     venue: 'Mathematics, vol. 14, no. 6, 1075',

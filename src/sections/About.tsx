@@ -32,7 +32,7 @@ const About = () => {
     const steps = 60;
     const interval = duration / steps;
     
-    const targets = { positions: 3, areas: 5, publications: 32 };
+    const targets = { positions: 3, areas: 5, publications: 34 };
     let step = 0;
     
     const counterInterval = setInterval(() => {
